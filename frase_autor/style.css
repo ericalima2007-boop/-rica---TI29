@@ -1,0 +1,45 @@
+body {
+    background-color: #e8e8e8;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.foto {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+blockquote {
+    background-color: #1f2937;
+    color: #ffffff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    border-left: 8px solid #f59e0b;
+    border-radius: 10px;
+    font-size: 40px;
+    font-style: italic;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.rosa {
+    color: #ff1493;
+    font-weight: bold;
+}
+
+.dourado {
+    color: #facc15;
+    font-weight: bold;
+}
+
+.autor {
+    font-size: 28px;
+    font-weight: bold;
+    color: #374151;
+}

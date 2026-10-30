@@ -1,0 +1,92 @@
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+img {
+    width: 250px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 15px;
+}
+
+/* Página inicial */
+.home {
+    background-color: #f5f0e6;
+    color: #5a3e2b;
+}
+
+.home a {
+    color: #8b4513;
+}
+
+/* Orgulho e Preconceito */
+.orgulho {
+    background-color: #f3e0c7;
+    color: #5d4037;
+}
+
+.orgulho a {
+    background-color: #5d4037;
+    color: white;
+}
+
+/* Addie LaRue */
+.addie {
+    background-color: #0a1931;
+    color: #f7d774;
+}
+
+.addie a {
+    background-color: #f7d774;
+    color: #0a1931;
+}
+
+/* Era Uma Vez Um Coração Partido */
+.coracao {
+    background-color: #ffd1dc;
+    color: #c2185b;
+}
+
+.coracao a {
+    background-color: #c2185b;
+    color: white;
+}
+
+/* O Príncipe Cruel */
+.principe {
+    background-color: #1b4332;
+    color: #d4af37;
+}
+
+.principe a {
+    background-color: #d4af37;
+    color: #1b4332;
+}
