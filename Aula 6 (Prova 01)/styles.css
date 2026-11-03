@@ -1,0 +1,159 @@
+:root {
+    --color-primary: #087a12;
+    --color-primary-light: #169626;
+    --color-border: #087a12;
+    --color-text: #111;
+    --color-bg: #f5f5f5;
+    --color-card: #ffffff;
+    --color-day-border: #222;
+    --color-muted: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-bg);
+    font-family: Georgia, serif;
+    color: var(--color-text);
+}
+
+.container {
+    width: 1100px;
+    margin: 40px auto;
+}
+
+.days {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.day {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid var(--color-day-border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: var(--color-text);
+    background: white;
+}
+
+.day.active {
+    background: var(--color-primary);
+    color: white;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.hour {
+    width: 120px;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.card {
+    flex: 1;
+    background: var(--color-card);
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    padding: 28px 40px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    padding: 12px 22px;
+    font-size: 22px;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.separator {
+    height: 2px;
+    background: var(--color-primary-light);
+    margin-bottom: 24px;
+}
+
+.speakers {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.speaker {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar {
+    clip-path: circle();
+    height: 100px;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 20px;
+}
+
+i {
+    color: black;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+    }
+
+    .hour {
+        width: auto;
+    }
+
+    .speakers {
+        flex-direction: column;
+    }
+}
