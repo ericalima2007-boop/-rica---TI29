@@ -1,0 +1,151 @@
+:root{
+    --dark-color: #3b4a54;
+    --green-color: #00a884;
+    --black: #000;
+    --white: #fff;
+    --gray: #d9d9d9;
+    --blue-check: #53bdeb;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e5e5e5;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.chat{
+    width:560px;
+    height:520px;
+    background:var(--black);
+    padding:20px;
+    border-radius:5px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:var(--white);
+    border-bottom:1px solid #444;
+    padding-bottom:12px;
+}
+
+.header h1{
+    font-size:3rem;
+}
+
+.menu-chat{
+    font-size:26px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu-chat:hover{
+    color:var(--green-color);
+}
+
+.messages{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:20px;
+}
+
+/* Mensagens */
+
+.message{
+    position:relative;
+    max-width:280px;
+    padding:16px 40px 16px 14px;
+    border-radius:12px;
+    color:white;
+    font-size:1.2rem;
+}
+
+.received{
+    background:var(--dark-color);
+    align-self:flex-start;
+}
+
+.sent{
+    background:var(--green-color);
+    align-self:flex-end;
+}
+
+/* Double Check */
+
+.check{
+    position:absolute;
+    bottom:8px;
+    right:12px;
+    font-size:14px;
+    color:#86c6ff;
+}
+
+.check.viewed{
+    color:var(--blue-check);
+}
+
+/* Dropdown Icon */
+
+.dropdown-icon{
+    position:absolute;
+    top:12px;
+    right:10px;
+    opacity:0;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.message:hover .dropdown-icon{
+    opacity:1;
+}
+
+.dropdown-icon:hover{
+    color:#000;
+}
+
+/* Menu Dropdown */
+
+.dropdown{
+    position:absolute;
+    top:45px;
+    right:5px;
+
+    width:120px;
+
+    background:white;
+    color:black;
+
+    border-radius:6px;
+    overflow:hidden;
+
+    display:none;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.3);
+
+    z-index:10;
+}
+
+.message:hover .dropdown{
+    display:block;
+}
+
+.dropdown p{
+    padding:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.dropdown p:hover{
+    background:#ececec;
+}
